@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Lightgray);
+}
+
+main{
+    width: 320px;
+    height: 500px;
+    margin: 70px auto;
+    background-color: var(--White);
+    border: 1px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+/*--------------- Image Container ---------------*/
+.container-image{
+    width: 290px;
+    height: 290px;
+}
+
+.main-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/image-qr-code.png);
+    background-size: contain;
+    border: 1px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+/*--------------- Text ---------------*/
+.text{
+    width: 260px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+h1{
+    font-size: 20px;
+    color: var(--Darkblue);
+}
+
+p{
+    font-size: 15px;
+    color: var(--Grayishblue);
+}
+
+/*--------------- footer ---------------*/
+footer{
+    margin-bottom: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*--------------- MEDIA QUERIS ---------------*/
+@media screen and (min-width: 1200px){
+    main{
+        width: 340px;
+        height: 520px;
+    }
+}
